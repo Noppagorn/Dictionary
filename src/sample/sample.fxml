@@ -38,9 +38,9 @@
          <children>
             <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="4" />
             <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <ScrollPane fx:id="PaneShowWords" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
               <content>
-                <AnchorPane fx:id="PaneShowWords" minHeight="0.0" minWidth="0.0" prefHeight="245.0" prefWidth="272.0" />
+                <AnchorPane fx:id="achorPaneShowWords" minHeight="0.0" minWidth="0.0" prefHeight="245.0" prefWidth="272.0" />
               </content>
             </ScrollPane>
             <Label fx:id="labelShowType" prefHeight="48.0" prefWidth="91.0" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
