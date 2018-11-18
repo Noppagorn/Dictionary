@@ -1,17 +1,24 @@
 package sample;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.NoSuchElementException;
 
 public class Dictionary {
-    private HashMap<String,Vocabulary> words = new HashMap<>();
+    private ArrayList<Vocabulary> words = new ArrayList<>();
 
-    public void addWord(String word,Vocabulary vocab){
-        words.put(word,vocab);
+    public void addWord(Vocabulary vocab){
+        words.add(vocab);
     }
     public Vocabulary getWord(String word){
-        return words.get(word);
+
+        for (Vocabulary x: words
+             ) {
+            if(word.equals(x.getWord())) return  x;
+        }
+        throw new NoSuchElementException("Cannot find " + word);
     }
-    public HashMap getWords(){
+    public ArrayList<Vocabulary> getWords(){
         return  words;
     }
 }

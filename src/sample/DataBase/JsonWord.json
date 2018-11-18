@@ -1,1 +1,14 @@
-{"Read":{"partOfSpeech":"verb","meaning":"read somting","example":"I read a book"},"wrote":{"partOfSpeech":"verb","meaning":"read somting","example":"I read a book"}}
+[
+  {
+    "word": "Read",
+    "partOfSpeech": "verb",
+    "meaning": "read somting",
+    "example": "I read a book"
+  },
+  {
+    "word": "Write",
+    "partOfSpeech": "verb",
+    "meaning": "read somting",
+    "example": "I read a book"
+  }
+]

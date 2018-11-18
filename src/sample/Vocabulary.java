@@ -1,14 +1,20 @@
 package sample;
 
 public class Vocabulary {
+    private String word;
     private String partOfSpeech;
     private String meaning;
     private String example;
 
-    public Vocabulary(String partOfSpeech, String meaning, String example) {
+    public Vocabulary(String word,String partOfSpeech, String meaning, String example) {
+        this.word = word;
         this.partOfSpeech = partOfSpeech;
         this.meaning = meaning;
         this.example = example;
+    }
+
+    public String getWord() {
+        return word;
     }
 
     public String getPartOfSpeech() {
@@ -25,10 +31,11 @@ public class Vocabulary {
 
     @Override
     public String toString() {
-        String temp = "";
-        temp += "PartOfSpeech : " + partOfSpeech + '\n';
-        temp += "meaning : " + meaning + '\n';
-        temp += "example : " + example + '\n';
-        return temp;
+            String temp = "";
+            temp += "Word : " + word + '\n';
+            temp += "PartOfSpeech : " + partOfSpeech + '\n';
+            temp += "meaning : " + meaning + '\n';
+            temp += "example : " + example + '\n';
+            return temp;
     }
 }

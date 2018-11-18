@@ -9,10 +9,9 @@ import sample.Vocabulary;
 import java.io.*;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class JsonFormat {
-    public void writeToJson(HashMap words){
+    public void writeToJson(ArrayList words){
         Gson gson = new Gson();
         String json = gson.toJson(words);
         try {
@@ -24,13 +23,13 @@ public class JsonFormat {
         }
 
     }
-    public HashMap readFromJson(){
+    public ArrayList readFromJson(){
         Gson gson = new Gson();
-        HashMap<String,Vocabulary> tempHash = null;
+        ArrayList<Vocabulary> tempHash = null;
         try {
             BufferedReader reader = new BufferedReader(new FileReader("src/sample/DataBase/JsonWord.json"));
-            HashMap<String, Object> retMap = new Gson().fromJson(
-                    reader, new TypeToken<HashMap<String, Vocabulary>>() {}.getType()
+            ArrayList<Vocabulary> retMap = new Gson().fromJson(
+                    reader, new TypeToken<ArrayList<Vocabulary>>() {}.getType()
             );
             return retMap;
 
