@@ -1,11 +1,10 @@
-package sample.Controller;
+package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import sample.Dictionary.Vocabulary;
-import sample.JSON.JsonFormat;
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
@@ -34,6 +33,7 @@ public class ControlDeletePage {
         }
         words.remove(i);
         new JsonFormat().writeToJson(words);
+        new FormatTOXml().writeXML(words);
     }
 
     private boolean checkWord(String word){

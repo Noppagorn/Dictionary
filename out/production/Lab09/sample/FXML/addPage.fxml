@@ -7,14 +7,12 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="431.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControlEditPage">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAddPage">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="63.333309173583984" minWidth="10.0" prefWidth="28.666685104370117" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.33331489562988" minWidth="10.0" prefWidth="107.33331489562988" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.6666463216146" minWidth="10.0" prefWidth="190.6666463216146" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="76.0" minWidth="10.0" prefWidth="16.66668701171875" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.33331298828125" minWidth="10.0" prefWidth="94.00002034505206" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="76.0" minWidth="4.000020345052064" prefWidth="20.999979654947936" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="76.0" minWidth="4.000020345052064" prefWidth="4.000020345052064" />
   </columnConstraints>
   <rowConstraints>
       <RowConstraints maxHeight="35.333343505859375" minHeight="10.0" prefHeight="18.666671752929688" vgrow="SOMETIMES" />
@@ -25,15 +23,14 @@
     <RowConstraints maxHeight="53.333343505859375" minHeight="10.0" prefHeight="53.333343505859375" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Button fx:id="buttonControll2" mnemonicParsing="false" onAction="#handleButtonEdit" prefHeight="25.0" prefWidth="76.0" text="Add" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Button fx:id="buttonControll2" mnemonicParsing="false" onAction="#handleButtonadd" prefHeight="25.0" prefWidth="76.0" text="Add" GridPane.columnIndex="2" GridPane.rowIndex="5" />
       <TextField fx:id="textPOS" GridPane.columnIndex="2" GridPane.rowIndex="2" />
       <TextField fx:id="textMean" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-      <TextField fx:id="textWord" prefHeight="25.0" prefWidth="110.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <TextField fx:id="textWord" GridPane.columnIndex="2" GridPane.rowIndex="1" />
       <TextField fx:id="textExample" GridPane.columnIndex="2" GridPane.rowIndex="4" />
       <Label prefHeight="44.0" prefWidth="79.0" text="Word" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Label prefHeight="37.0" prefWidth="79.0" text="Part of Speech" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <Label prefHeight="37.0" prefWidth="79.0" text="Meaning" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Label prefHeight="37.0" prefWidth="79.0" text="Example" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Button fx:id="buttonFind" mnemonicParsing="false" onAction="#handlebuttonFind" prefHeight="25.0" prefWidth="76.0" text="Find Word" GridPane.columnIndex="4" GridPane.rowIndex="1" />
    </children>
 </GridPane>

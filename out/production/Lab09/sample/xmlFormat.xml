@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<Dictionary>
+    <Details>
+        <Word>Write</Word>
+        <PartOfSpeech>verbs</PartOfSpeech>
+        <Meaning>read somting</Meaning>
+        <Example>I read a book</Example>
+        <Word>Read</Word>
+        <PartOfSpeech>noun</PartOfSpeech>
+        <Meaning>read somting</Meaning>
+        <Example>I read a book</Example>
+        <Word>Run</Word>
+        <PartOfSpeech>verb</PartOfSpeech>
+        <Meaning>wlak fast</Meaning>
+        <Example>I run so fast</Example>
+    </Details>
+</Dictionary>

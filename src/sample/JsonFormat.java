@@ -1,4 +1,4 @@
-package sample.JSON;
+package sample;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -12,7 +12,10 @@ public class JsonFormat {
         Gson gson = new Gson();
         String json = gson.toJson(words);
         try {
-            PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("JsonWord.json")));
+            File newDir = null;
+            newDir = new File("DataBase");
+            newDir.mkdir();
+            PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("DataBase/JsonWord.json")));
             pw.println(json);
             pw.close();
         } catch (IOException e) {
@@ -24,7 +27,7 @@ public class JsonFormat {
         Gson gson = new Gson();
         ArrayList<Vocabulary> tempHash = null;
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("JsonWord.json"));
+            BufferedReader reader = new BufferedReader(new FileReader("DataBase/JsonWord.json"));
             ArrayList<Vocabulary> retMap = new Gson().fromJson(
                     reader, new TypeToken<ArrayList<Vocabulary>>() {}.getType()
             );
@@ -42,7 +45,7 @@ public class JsonFormat {
         Gson gson = new Gson();
         ArrayList<Vocabulary> tempHash = null;
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("JsonWord.json"));
+            BufferedReader reader = new BufferedReader(new FileReader("DataBase/JsonWord.json"));
             ArrayList<Vocabulary> retMap = new Gson().fromJson(
                     reader, new TypeToken<ArrayList<Vocabulary>>() {}.getType()
             );

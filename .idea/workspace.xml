@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Lab09:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="It successes to read file json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab09/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/Controller2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/ControllerStage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/DataBase/JsonWord.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/DataBase/xmlFormat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/Dictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/JSON/JsonFormat$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/JSON/JsonFormat.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab09/sample/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab09/sample/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab09/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/Vocabulary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/XML/XmlFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/addPage.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab09/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ControlDeletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControlDeletePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ControlEditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControlEditPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ControllerStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControllerStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ControllerAddPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControllerAddPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Dictionary/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Dictionary/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Dictionary/Vocabulary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Dictionary/Vocabulary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FXML/EditPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/EditPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FXML/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FormatTOXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FormatTOXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/JsonFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/JsonFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/JsonWord.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/JsonWord.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Measurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Measurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/MyFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/MyFormatter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/XML/XmlFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/XML/XmlFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/addPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/addPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,29 +100,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="7" />
-          <entry key="java" value="13" />
-          <entry key="json" value="3" />
-          <entry key="xml" value="3" />
+          <entry key="fxml" value="11" />
+          <entry key="java" value="33" />
+          <entry key="json" value="6" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="13" />
-          <entry key="JSON" value="3" />
-          <entry key="XML" value="10" />
+          <entry key="JAVA" value="33" />
+          <entry key="JSON" value="6" />
+          <entry key="XML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="fxml" value="5" />
-          <entry key="java" value="2136" />
+          <entry key="fxml" value="11" />
+          <entry key="java" value="3654" />
+          <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2136" />
-          <entry key="XML" value="5" />
+          <entry key="JAVA" value="3654" />
+          <entry key="JSON" value="1" />
+          <entry key="XML" value="11" />
         </counts>
       </usages-collector>
     </session>
@@ -113,24 +135,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ControllerStage.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/JsonFormat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#175#176#0" expanded="true" />
-                <element signature="e#206#207#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/XML/XmlFormat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+            <state relative-caret-position="170">
+              <caret line="16" column="27" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="16" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,19 +147,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="13" column="40" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="40" />
+            <state relative-caret-position="187">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Measurer.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/MyFormatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JsonWord.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -159,54 +179,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="48" column="61" selection-start-line="48" selection-start-column="61" selection-end-line="48" selection-end-column="61" />
+            <state relative-caret-position="99">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
+                <element signature="e#1047#1048#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/FileReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/FormatTOXml.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/addPage.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        <entry file="file://$PROJECT_DIR$/src/sample/ControllerAddPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="244" lean-forward="true" selection-start-line="7" selection-start-column="244" selection-end-line="7" selection-end-column="244" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="159" lean-forward="true" selection-start-line="11" selection-start-column="124" selection-end-line="11" selection-end-column="159" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Controller2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Dictionary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+            <state relative-caret-position="162">
+              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -243,18 +258,33 @@
         <option value="$PROJECT_DIR$/src/sample/JSON/Test.java" />
         <option value="$PROJECT_DIR$/src/sample/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/sample/Vocabulary.java" />
-        <option value="$PROJECT_DIR$/src/sample/JSON/JsonFormat.java" />
         <option value="$PROJECT_DIR$/src/sample/DataBase/JsonWord.json" />
         <option value="$PROJECT_DIR$/src/sample/sample2.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Measurer.java" />
-        <option value="$PROJECT_DIR$/src/sample/Test.java" />
-        <option value="$PROJECT_DIR$/src/sample/XML/XmlFormat.java" />
         <option value="$PROJECT_DIR$/src/addPage.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/ControllerStage.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller2.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/addPage.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/deletePage.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/MyFormatter.java" />
+        <option value="$PROJECT_DIR$/src/sample/Dictionary/Dictionary.java" />
+        <option value="$PROJECT_DIR$/src/sample/MyFormatter.java" />
+        <option value="$PROJECT_DIR$/src/sample/FXML/EditPage.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Dictionary/Vocabulary.java" />
+        <option value="$PROJECT_DIR$/src/sample/XML/XmlFormat.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/sample/ControllerAddPage.java" />
+        <option value="$PROJECT_DIR$/src/sample/ControlEditPage.java" />
+        <option value="$PROJECT_DIR$/src/sample/ControlDeletePage.java" />
+        <option value="$PROJECT_DIR$/src/sample/JSON/JsonFormat.java" />
+        <option value="$PROJECT_DIR$/src/sample/XML/FormatTOXml.java" />
+        <option value="$PROJECT_DIR$/src/sample/JsonWord.json" />
+        <option value="$PROJECT_DIR$/JsonWord.json" />
+        <option value="$PROJECT_DIR$/src/sample/JsonFormat.java" />
+        <option value="$PROJECT_DIR$/src/sample/FormatTOXml.java" />
+        <option value="$PROJECT_DIR$/src/sample/Test.java" />
       </list>
     </option>
   </component>
@@ -265,10 +295,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-5" />
-    <option name="width" value="1703" />
-    <option name="height" value="1031" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
+    <option name="width" value="1614" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -289,6 +319,11 @@
             <path>
               <item name="Lab09" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab09" type="462c0819:PsiDirectoryNode" />
+              <item name="DataBase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab09" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab09" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -296,6 +331,13 @@
               <item name="Lab09" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab09" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab09" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="FXML" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -316,10 +358,10 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542601326966" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542619352317" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/sample" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CallBack" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -327,9 +369,13 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="sample" />
+      <recent name="sample.Controller" />
+      <recent name="sample.Dictionary" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\LENOVO\IdeaProjects\Lab09\src\sample" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\Lab09\src\sample\FXML" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\Lab09\src\sample\XML" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -451,7 +497,7 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1542521075554" duration="5960000" />
       <workItem from="1542530652463" duration="16602000" />
-      <workItem from="1542599439937" duration="1862000" />
+      <workItem from="1542599439937" duration="18460000" />
     </task>
     <task id="LOCAL-00001" summary="It successes to read file json">
       <created>1542531364539</created>
@@ -464,13 +510,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25726000" />
+    <option name="totallyTimeSpent" value="42324000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1135" height="687" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.16744186" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18947369" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -479,7 +525,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32792792" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38989168" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38434163" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -490,7 +536,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32851985" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32740214" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -504,41 +550,6 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16744186" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32792792" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38989168" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Problems" order="9" />
-      <window_info anchor="bottom" id="Changes" order="10" />
-      <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32851985" />
-      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="15" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="JetGradle" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -552,88 +563,30 @@
     <MESSAGE value="It successes to read file json" />
     <option name="LAST_COMMIT_MESSAGE" value="It successes to read file json" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/sample/Test.java</url>
+          <line>11</line>
+          <properties class="sample.Test" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JsonWord.json" />
-    <entry file="file://$PROJECT_DIR$/src/sample/DataBase/JsonWord.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Vocabulary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample2.fxml" />
     <entry file="file://$PROJECT_DIR$/ros.xml" />
-    <entry file="file://$PROJECT_DIR$/src/sample/DataBase/xmlFormat.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/JSON/JsonFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/XML/XmlFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Measurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Dictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/addPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ControllerStage.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -647,45 +600,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/addPage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Measurer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="48" column="61" selection-start-line="48" selection-start-column="61" selection-end-line="48" selection-end-column="61" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/FXML/deletePage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Dictionary/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller2.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/FXML/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Dictionary/Vocabulary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="159" lean-forward="true" selection-start-line="11" selection-start-column="124" selection-end-line="11" selection-end-column="159" />
+        <state relative-caret-position="17">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/addPage.fxml">
+    <entry file="file://$PROJECT_DIR$/src/sample/ControlEditPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ControlDeletePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/FXML/EditPage.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="244" lean-forward="true" selection-start-line="7" selection-start-column="244" selection-end-line="7" selection-end-column="244" />
+        <state relative-caret-position="425">
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/FXML/addPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/xmlFormat.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/JsonWord.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JsonWord.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/MyFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBase/JsonWord.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBase/xmlFormat.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/JsonFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/FormatTOXml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ControllerAddPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -695,7 +791,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>JavaFXApp</last-edited>
+          <last-edited>Lab09:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,4 +1,4 @@
-package sample;
+package sample.Dictionary;
 
 public class Vocabulary {
     private String word;
@@ -10,6 +10,18 @@ public class Vocabulary {
         this.word = word;
         this.partOfSpeech = partOfSpeech;
         this.meaning = meaning;
+        this.example = example;
+    }
+
+    public void setPartOfSpeech(String partOfSpeech) {
+        this.partOfSpeech = partOfSpeech;
+    }
+
+    public void setMeaning(String meaning) {
+        this.meaning = meaning;
+    }
+
+    public void setExample(String example) {
         this.example = example;
     }
 

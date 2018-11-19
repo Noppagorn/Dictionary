@@ -1,4 +1,4 @@
-package sample.XML;
+package sample;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -72,7 +72,10 @@ public class FormatTOXml {
             DOMSource source = new DOMSource(doc);
             try {
                 // location and name of XML file you can change as per need
-                FileWriter fos = new FileWriter("xmlFormat.xml");
+                File newDir = null;
+                newDir = new File("DataBase");
+                newDir.mkdir();
+                FileWriter fos = new FileWriter("DataBase/xmlFormat.xml");
                 StreamResult result = new StreamResult(fos);
                 aTransformer.transform(source, result);
 
@@ -88,7 +91,7 @@ public class FormatTOXml {
     }
 
     public String readXML() throws IOException {
-        File file = new File("xmlFormat.xml");
+        File file = new File("DataBase/xmlFormat.xml");
         String temp = "";
         BufferedReader br = null;
         try {

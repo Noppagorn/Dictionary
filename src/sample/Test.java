@@ -2,16 +2,11 @@ package sample;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import sample.JSON.JsonFormat;
-import sample.XML.XmlFormat;
+import sample.Dictionary.Dictionary;
+import sample.Dictionary.Vocabulary;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Unmarshaller;
-import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Test {
     public static void main(String[] args) {
@@ -25,13 +20,21 @@ public class Test {
         JsonFormat jsonFormat = new JsonFormat();
         jsonFormat.writeToJson(dictionary.getWords());
         ArrayList<Vocabulary> temp = jsonFormat.readFromJson();
+        new FormatTOXml().writeXML(temp);
         //System.out.println(temp);
-
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String json = gson.toJson(temp);
-        System.out.println(json);
-
-        XmlFormat xmlFormat = new XmlFormat();
-        xmlFormat.writeXML(temp);
+//
+//        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+//        String json = gson.toJson(temp);
+//        System.out.println(json);
+//
+//        FormatTOXml xmlFormat = new FormatTOXml();
+//        xmlFormat.writeXML(temp);
+//
+//        try {
+//            String s = xmlFormat.readXML();
+//            System.out.println(s);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 }

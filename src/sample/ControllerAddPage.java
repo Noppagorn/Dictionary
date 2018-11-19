@@ -1,11 +1,10 @@
-package sample.Controller;
+package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import sample.Dictionary.Vocabulary;
-import sample.JSON.JsonFormat;
 
 import java.util.ArrayList;
 
@@ -28,6 +27,7 @@ public class ControllerAddPage {
                 ,textPOS.getText(),textMean.getText(),textExample.getText());
         words.add(toAdd);
         jsonFormat.writeToJson(words);
+        new FormatTOXml().writeXML(words);
         textWord.setText("");
         textPOS.setText("");
         textMean.setText("");

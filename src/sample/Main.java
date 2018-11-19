@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sample.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("FXML/sample.fxml"));
         Parent root = fxmlLoader.load();
 
         primaryStage.setTitle("Dictionary");

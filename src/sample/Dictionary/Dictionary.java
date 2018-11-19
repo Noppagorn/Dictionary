@@ -1,7 +1,6 @@
-package sample;
+package sample.Dictionary;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.NoSuchElementException;
 
 public class Dictionary {
@@ -21,4 +20,5 @@ public class Dictionary {
     public ArrayList<Vocabulary> getWords(){
         return  words;
     }
+
 }
