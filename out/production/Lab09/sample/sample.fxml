@@ -17,33 +17,34 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <GridPane prefHeight="361.0" prefWidth="569.0">
+      <GridPane prefHeight="500.0" prefWidth="600.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="113.66665840148926" minWidth="10.0" prefWidth="20.333341598510742" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.66665140787757" minWidth="10.0" prefWidth="66.99998982747395" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.66665140787757" minWidth="7.33331298828125" prefWidth="11.33331298828125" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.00000635782874" minWidth="10.0" prefWidth="279.33335367838544" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.33337402343747" minWidth="10.0" prefWidth="32.00001525878906" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.3333740234375" minWidth="10.0" prefWidth="175.3333740234375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.00000635782874" minWidth="10.0" prefWidth="276.66670735677087" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.00005594889325" minWidth="10.0" prefWidth="117.33335367838544" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.3333740234375" minWidth="10.0" prefWidth="77.3333129882812" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.6666259765625" minWidth="10.0" prefWidth="24.6666259765625" />
         </columnConstraints>
         <rowConstraints>
             <RowConstraints maxHeight="52.333327770233154" minHeight="8.33332316080729" prefHeight="16.666666666666664" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="61.33333333333333" minHeight="10.0" prefHeight="38.333343505859375" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="247.999989827474" minHeight="10.0" prefHeight="243.3333180745443" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="80.66667683919275" minHeight="0.6666463216146212" prefHeight="5.333333333333371" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="78.66666666666669" minHeight="10.0" prefHeight="27.99998982747394" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="61.33333333333333" minHeight="10.0" prefHeight="13.666670481363937" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="381.333329518636" minHeight="7.666693369547559" prefHeight="49.00003306070967" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="404.99997329711914" minHeight="0.0" prefHeight="363.66663360595703" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="78.66666666666669" minHeight="10.0" prefHeight="23.66668701171875" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="25.333343505859375" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="4" />
             <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <ScrollPane fx:id="PaneShowWords" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <ScrollPane fx:id="PaneShowWords" prefHeight="248.0" prefWidth="272.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="2">
               <content>
-                <AnchorPane fx:id="achorPaneShowWords" minHeight="0.0" minWidth="0.0" prefHeight="245.0" prefWidth="272.0" />
+                <AnchorPane fx:id="achorPaneShowWords" minHeight="0.0" minWidth="0.0" prefHeight="245.0" prefWidth="280.0" />
               </content>
             </ScrollPane>
             <Label fx:id="labelShowType" prefHeight="48.0" prefWidth="91.0" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="25.0" prefWidth="112.0" text="AddWord" GridPane.columnIndex="5" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </children>

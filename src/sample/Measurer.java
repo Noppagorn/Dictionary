@@ -1,4 +1,4 @@
 package sample;
-
-public class Measurer {
+public interface Measurer {
+    double measure(Object obj);
 }
