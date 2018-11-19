@@ -1,9 +1,8 @@
 package sample.XML;
 
-import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import sample.Vocabulary;
+import sample.Dictionary.Vocabulary;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -14,11 +13,10 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
-public class XmlFormat {
+public class FormatTOXml {
     public void writeXML(ArrayList<Vocabulary> words) {
         try {
 
@@ -74,7 +72,7 @@ public class XmlFormat {
             DOMSource source = new DOMSource(doc);
             try {
                 // location and name of XML file you can change as per need
-                FileWriter fos = new FileWriter("src/sample/DataBase/xmlFormat.xml");
+                FileWriter fos = new FileWriter("xmlFormat.xml");
                 StreamResult result = new StreamResult(fos);
                 aTransformer.transform(source, result);
 
@@ -87,5 +85,22 @@ public class XmlFormat {
             System.out.println("Error outputting document");
 
         }
+    }
+
+    public String readXML() throws IOException {
+        File file = new File("xmlFormat.xml");
+        String temp = "";
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new FileReader(file));
+            String st;
+            while ((st = br.readLine()) != null) {
+                //System.out.print(st+'\n');
+                temp += st + '\n';
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return temp;
     }
 }
