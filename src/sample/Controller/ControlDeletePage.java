@@ -1,10 +1,12 @@
-package sample;
+package sample.Controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import sample.Dictionary.Vocabulary;
+import sample.FormatTOXml;
+import sample.JsonFormat;
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;

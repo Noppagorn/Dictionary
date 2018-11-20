@@ -1,4 +1,4 @@
-package sample;
+package sample.Controller;
 
 
 import com.google.gson.Gson;
@@ -14,6 +14,9 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sample.Dictionary.Vocabulary;
+import sample.FormatTOXml;
+import sample.JsonFormat;
+import sample.MyFormatter;
 
 import java.io.IOException;
 import java.util.ArrayList;
