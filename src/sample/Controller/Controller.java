@@ -1,22 +1,18 @@
 package sample.Controller;
 
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.text.Text;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
+import sample.Dictionary.Dictionary;
 import sample.Dictionary.Vocabulary;
-import sample.FormatTOXml;
-import sample.JsonFormat;
-import sample.MyFormatter;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,82 +27,109 @@ public class Controller {
     @FXML private  Button xmlButton;
     @FXML private  Button buttonEdit;
 
+    @FXML TableView<Vocabulary> tableViewVocab;
+    @FXML
+    TableColumn<Vocabulary,String> columWord;
+    @FXML TableColumn<Vocabulary,String> columnPOS;
+
+    @FXML TableColumn<Vocabulary,String> columnMeaning;
+    @FXML TableColumn<Vocabulary,String> columnExample;
+
     ArrayList<Vocabulary> words = null;
-    Gson gson = new GsonBuilder().setPrettyPrinting().create();
     public Controller(){
-        JsonFormat jsonFormat = new JsonFormat();
-        words = jsonFormat.readFromJson();
+        System.out.println("control");
     }
 
-    private Text toText(MyFormatter myFormatter){
-        return (Text)myFormatter;
-    }
+
+
     @FXML
     public void initialize(){
-        words = new JsonFormat().readFromJson();
-        String json = gson.toJson(words);
+        words = new Dictionary().getWords();
+        showAllColumn();
+    }
 
-        Text text = new Text(json);
-        PaneShowWords.setContent(text);
-        labelShowType.setText("JSON");
+    public void showAllColumn(){
+        update();
+        columWord.setCellValueFactory(param -> new SimpleStringProperty(param.getValue().getWord()));
+
+        columnPOS.setCellValueFactory(param -> new SimpleStringProperty(param.getValue().getPartOfSpeech()));
+        columnMeaning.setCellValueFactory(param -> new SimpleStringProperty(param.getValue().getMeaning()));
+
+        columnExample.setCellValueFactory(param -> new SimpleStringProperty(param.getValue().getExample()));
+    }
+
+    private void update(){
+        ObservableList<Vocabulary> subjectsObs = FXCollections.observableArrayList(words);
+        tableViewVocab.getItems().clear();
+        tableViewVocab.setItems(subjectsObs);
+    }
+
+
+    @FXML
+    public void handleJsonButton(ActionEvent event) throws IOException {
+        for (Vocabulary x: words
+             ) {
+            System.out.println(x.getWord());
+        }
+        System.out.println("Json");
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../FXML/jsonPage.fxml"));
+        Parent root1 = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root1));
+        ControllerJson controller = fxmlLoader.getController();
+        controller.init(words);
+        stage.show();
+    }
+
+    @FXML
+    public void handleXmlButton(ActionEvent event) throws IOException {
+        System.out.println("xml");
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../FXML/xmlPage.fxml"));
+        Parent root1 = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root1));
+        ControllerXml controller = fxmlLoader.getController();
+        controller.init(words);
+        stage.show();
     }
 
     @FXML
     public void handleAddButton(ActionEvent event) throws IOException {
-        System.out.println("click to add page");
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXML/addPage.fxml"));
+        System.out.println("xml");
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../FXML/addPage.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
         Stage stage = new Stage();
         stage.setScene(new Scene(root1));
-        ControllerAddPage controller2 = fxmlLoader.getController();
+        ControllerAdd controller = fxmlLoader.getController();
+        controller.init(words, this::update);
         stage.show();
+
     }
 
     @FXML
-    public void handleJsonButton(ActionEvent event){
-        System.out.println("json");
-        words = new JsonFormat().readFromJson();
-        String json = gson.toJson(words);
+    public void handleDeleteButton(ActionEvent event){
 
-        Text text = new Text(json);
-        PaneShowWords.setContent(text);
-        labelShowType.setText("JSON");
+        buttonDelete.setOnAction(e -> {
+            Vocabulary selectedItem = tableViewVocab.getSelectionModel().getSelectedItem();
+            tableViewVocab.getItems().remove(selectedItem);
+            words.remove(selectedItem);
+        });
     }
 
     @FXML
-    public void handleButtonDelete(ActionEvent event) throws IOException {
-        System.out.println("delete");
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXML/deletePage.fxml"));
-        Parent root1 = (Parent) fxmlLoader.load();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root1));
-        ControlDeletePage controller3 = fxmlLoader.getController();
-        stage.show();
-    }
-
-    @FXML
-    public void handleButtonEdit(ActionEvent event) throws IOException {
+    public void handleAddEdit(ActionEvent event) throws IOException {
         System.out.println("Edit");
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXML/EditPage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../FXML/EditPage.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
         Stage stage = new Stage();
         stage.setScene(new Scene(root1));
-        ControlEditPage controller = fxmlLoader.getController();
+        ControllerEdite controller = fxmlLoader.getController();
+        controller.init(words, this::update);
         stage.show();
+
     }
 
-    @FXML
-    public void handleButtonxml(ActionEvent event){
-        System.out.println("XML");
-        String xml = "";
-        try {
-             xml = new FormatTOXml().readXML();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Text text = new Text(xml);
-        PaneShowWords.setContent(text);
-        labelShowType.setText("XML");
-    }
+
+
 
 }
