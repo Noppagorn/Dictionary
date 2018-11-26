@@ -13,6 +13,7 @@ public class Vocabulary {
         this.example = example;
     }
 
+
     public void setPartOfSpeech(String partOfSpeech) {
         this.partOfSpeech = partOfSpeech;
     }

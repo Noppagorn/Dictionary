@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -24,6 +25,7 @@ public class ControllerAdd {
         @FXML TextField textPOS;
         @FXML TextField textMean;
         @FXML TextField textExample;
+        @FXML Label emtryText;
         ArrayList<Vocabulary> words;
         Runnable callback;
 
@@ -33,8 +35,12 @@ public class ControllerAdd {
     }
 
     @FXML
-        public void handleButtonadd(ActionEvent event) throws IOException {
-            System.out.println("button2");
+        public void handleButtonadd(ActionEvent event){
+            if (textWord.getText().equals("") || textPOS.getText().equals("") || textMean.getText().equals("") || textExample.getText().equals("") ){
+                emtryText.setText("Invalid Vocab");
+                throw  new RuntimeException("emtryText");
+
+            }
             Vocabulary toAdd = new Vocabulary(textWord.getText()
                     ,textPOS.getText(),textMean.getText(),textExample.getText());
             words.add(toAdd);

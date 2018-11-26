@@ -36,6 +36,7 @@ public class Controller {
     @FXML TableColumn<Vocabulary,String> columnExample;
 
     ArrayList<Vocabulary> words = null;
+    Dictionary dictionary = null;
     public Controller(){
         System.out.println("control");
     }
@@ -45,9 +46,8 @@ public class Controller {
     @FXML
     public void initialize(){
         words = new Dictionary().getWords();
+        dictionary = new Dictionary();
         showAllColumn();
-        new Dictionary().writeTofile(words);
-        new Dictionary().readToArrayList();
     }
 
     public void showAllColumn(){
@@ -64,6 +64,7 @@ public class Controller {
         ObservableList<Vocabulary> subjectsObs = FXCollections.observableArrayList(words);
         tableViewVocab.getItems().clear();
         tableViewVocab.setItems(subjectsObs);
+        dictionary.writeTofile(words);
     }
 
 
@@ -117,6 +118,7 @@ public class Controller {
             tableViewVocab.getItems().remove(selectedItem);
             words.remove(selectedItem);
         });
+        update();
     }
 
     @FXML

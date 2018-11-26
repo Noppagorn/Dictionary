@@ -14,10 +14,8 @@ public class Dictionary {
     public void writeTofile(ArrayList<Vocabulary> words ){
         this.words = words;
 
-        String cwd = System.getProperty("user.dir");
         String fileSep = System.getProperty("file.separator");
 
-        String path = cwd + fileSep;
         File newDir = null;
         newDir = new File("newDie");
         newDir.mkdir();
@@ -50,6 +48,7 @@ public class Dictionary {
             while (line != null) {
                 sb.append(line);
                 String splt[] = line.split(",");
+                System.out.println(splt[0]+splt[1]+splt[2]+splt[3]);
                 Vocabulary tv = new Vocabulary(splt[0],splt[1],splt[2],splt[3]);
                 temp.add(tv);
                 line = br.readLine();
@@ -70,11 +69,7 @@ public class Dictionary {
     }
 
     public Dictionary(){
-        words.add(new Vocabulary("Run","Verb","Walk fast","I run so fast"));
-        words.add(new Vocabulary("Walk","Verb","move to somewhere by leg","I walk in the park"));
-        words.add(new Vocabulary("I","Noun","yourself","I run so fast"));
-        words.add(new Vocabulary("Cat","Noun","kind of pet","I like a cat."));
-        words.add(new Vocabulary("Dog","Noun","Kind of pet","I love a dog."));
+        words.addAll(readToArrayList());
     }
     public void addWord(Vocabulary vocab){
         words.add(vocab);
