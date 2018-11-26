@@ -1,2 +1,1 @@
-df,cxc,sdcf,dmv
-de,dws,sd,cds
+Dog,noun,kind of pet,I love a dog.

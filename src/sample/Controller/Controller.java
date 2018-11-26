@@ -117,8 +117,8 @@ public class Controller {
             Vocabulary selectedItem = tableViewVocab.getSelectionModel().getSelectedItem();
             tableViewVocab.getItems().remove(selectedItem);
             words.remove(selectedItem);
+            update();
         });
-        update();
     }
 
     @FXML
