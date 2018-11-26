@@ -41,7 +41,6 @@ public class ControllerJson {
 
         Text text = new Text(jsonString);
         jsonPane.setContent(text);
-
     }
 
 }

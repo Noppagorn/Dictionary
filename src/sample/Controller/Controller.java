@@ -46,6 +46,8 @@ public class Controller {
     public void initialize(){
         words = new Dictionary().getWords();
         showAllColumn();
+        new Dictionary().writeTofile(words);
+        new Dictionary().readToArrayList();
     }
 
     public void showAllColumn(){
@@ -78,6 +80,7 @@ public class Controller {
         stage.setScene(new Scene(root1));
         ControllerJson controller = fxmlLoader.getController();
         controller.init(words);
+
         stage.show();
     }
 

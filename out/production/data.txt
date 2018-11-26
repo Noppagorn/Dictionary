@@ -1,0 +1,5 @@
+Run,Verb,Walk fast,I run so fast
+Walk,Verb,move to somewhere by leg,I walk in the park
+I,Noun,yourself,I run so fast
+Cat,Noun,kind of pet,I like a cat.
+Dog,Noun,Kind of pet,I love a dog.
